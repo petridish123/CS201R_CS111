@@ -19,5 +19,8 @@ Yeah there's a bunch of columns named "___ Unposted Current Score" and stuff lik
 
 # TODOs
 - Identify which assignments were due before Midterms 1 and 2.
+- Homework 3, Lab 10 and Project 2A were all due before Midterm 1.
+- Homework 6, Project 3 and Lab17 were all due before Midterm 2.
+- All other assignments were due before the final.
 - Figure out what those weird columns mean.
 - *Whatever else you guys wanna put here*

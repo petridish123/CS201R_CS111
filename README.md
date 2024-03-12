@@ -2,6 +2,9 @@
 
 # Organization of the data:
 In total, there are 508 students and 85 features in this dataset.
+## Due Dates
+Homework 3, Lab 10 and Project 2A were all due before Midterm 1.
+Homework 6, Project 3 and Lab17 were all due before Midterm 2.
 ## Homeworks
 Data for the Homeworks are available under the corresponding Homework number, from 1 to 7.
 ## Labs
@@ -18,9 +21,7 @@ Other data available under the columns "Extra Credit" and "Free Coding."
 Yeah there's a bunch of columns named "___ Unposted Current Score" and stuff like that. No clue what that's about. Gonna delete those columns in my analysis ngl.
 
 # TODOs
-- Identify which assignments were due before Midterms 1 and 2.
-- Homework 3, Lab 10 and Project 2A were all due before Midterm 1.
-- Homework 6, Project 3 and Lab17 were all due before Midterm 2.
+
 - All other assignments were due before the final.
 - Figure out what those weird columns mean.
 - *Whatever else you guys wanna put here*

@@ -25,3 +25,9 @@ Yeah there's a bunch of columns named "___ Unposted Current Score" and stuff lik
 - All other assignments were due before the final.
 - Figure out what those weird columns mean.
 - *Whatever else you guys wanna put here*
+
+
+For data analysis, I created a testing and training set. 
+# **PLEASE ONLY USE THE TRAINING SET**
+As for your analysis, remove any columns you see that hinder the assessment, But I did edit the data to only have what we are going to us.
+## I SUGGEST USING A REGRESSOR, NOT A CLASSIFIER

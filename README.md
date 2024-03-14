@@ -20,6 +20,9 @@ Other data available under the columns "Extra Credit" and "Free Coding."
 ## A bunch of random stuff I can't identify
 Yeah there's a bunch of columns named "___ Unposted Current Score" and stuff like that. No clue what that's about. Gonna delete those columns in my analysis ngl.
 
+# NEW FILES
+pre_mt1_train.csv, pre_mt2_train.csv, and pre_final_train.csv all contain data for their respective time frames. The intention for each of these is for all features aside from the two "label" columns to be used in training the model. You may choose between classification (i.e. Final Exam Grade) and regression (i.e. Final Exam) by selecting the appropriate label column.
+
 # TODOs
 
 - All other assignments were due before the final.

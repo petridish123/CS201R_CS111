@@ -15,6 +15,7 @@ df = pd.read_csv("DataSets/pre_final_train.csv")
 
 y = df["Final Exam Grade"]
 X = df.drop("Final Exam Grade", axis = 1)
+X = X.drop("Final Exam", axis = 1)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
 label = X.columns
@@ -30,18 +31,32 @@ dtrain = xgb.DMatrix(X_train, label = label, missing = np.nan)
 
 dtest = xgb.DMatrix(X_test, label = y_test_labels, missing = np.nan)
 
-param = {'max_depth': 16, 'eta': 0.3, 'objective': 'multi:softmax', 'num_class': len(le.classes_)}
+param = {'max_depth': 6, 'eta': 0.3, 'objective': 'multi:softmax', 'num_class': len(le.classes_)}
 
 num_round = 1000
-evallist = [(dtrain, 'train'), (dtest, 'eval')]
-bst = xgb.train(param, dtrain, num_round, evallist,early_stopping_rounds=10)
+# evallist = [(dtrain, 'train'), (dtest, 'eval')]
+bst = xgb.train(param, dtrain, num_round)
 
-ypred = bst.predict(dtest, iteration_range=(0, bst.best_iteration + 1))
+ypred = bst.predict(dtest)
 
 print(ypred)
 print(accuracy_score(y_test_labels, ypred))
 
-xgb.plot_importance(bst)
+# xgb.plot_importance(bst)
 
 
 
+# con
+
+
+df = pd.read_csv("DataSets/pre_final_test.csv")
+
+y = df["Final Exam Grade"]
+X = df.drop("Final Exam Grade", axis = 1)
+X = X.drop("Final Exam", axis = 1)
+
+y_test_labels = le.transform(y)
+dtest = xgb.DMatrix(X, label = y_test_labels, missing = np.nan)
+ypred = bst.predict(dtest)
+print(ypred)
+print(accuracy_score(y_test_labels, ypred))
